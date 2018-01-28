@@ -1,7 +1,6 @@
 .schema-card {
     overflow: hidden;
     width: 90%;
-    border: 1px solid black;
     border-radius: 3px;    
     margin-top: 5px;
     margin-left: auto;
@@ -17,8 +16,10 @@
 
 .table-card {
     width: 100%;    
-    border: 1px solid black;
+    padding: 8px 8px 32px 8px;
+    border: 1px solid #FFECC1;
     border-radius: 3px;
+    position: relative;
 }
 
 .table-field {
@@ -26,9 +27,32 @@
 	font-size: small;
 }
 
-.obj-identifier {
+.table-field small {
+    border-top:thin solid black;
+    display: block;
+    line-height: 1.8em;
+}
+
+.bottom-bar {
+    position: absolute;
+    right:0; bottom: 0;
+    display: block;
+    background: #FFECC1;
+}
+
+.obj-identifier {    
     font-style: italic;
     font-size: x-small;
+    font-size: 0.8em;
+    background: #FFCE5C;
+    color: #FFB507;
+    padding: 4px; 
+    outline: none; border: 0;
+    float: right;
+}
+
+.obj-identifier i {
+    display: block;    
 }
 
 .fld-type {

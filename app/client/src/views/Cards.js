@@ -11,10 +11,10 @@ export const TableCard = (props) => {
         flds = props.table.props.fields.map(
             (fld) => (
                 <div key={fld.field_name}
-                     className="table-field "
+                     className="table-field"
                      title={fld.field_name}
-                     style={{color: fld.is_primary_key===true ? 'red':'inherit'}} >
-                    {fld.field_name}<span className="fld-type">{fld.inner_type}</span>
+                     style={{color: fld.is_primary_key===true ? '#FF2907':'inherit'}} >
+                    <small>{fld.field_name}<span className="fld-type">{fld.inner_type}</span></small>
                 </div>
             )
         );
@@ -26,9 +26,12 @@ export const TableCard = (props) => {
     return (
         <article className="table-card-outer">
             <div className="table-card" title={props.table.table_name}>
-                <p>{props.table.table_name.toUpperCase()}</p>
-                <button className="obj-identifier" href="{'/table/'+ props.table.table_name}"> </button>
+                <p className="text-overflow">{props.table.table_name.toUpperCase()}</p>
                 <small style={listWrapperStyles}>{flds}</small>
+                <div className="bottom-bar">
+                    <button className="obj-identifier" href="{'/table/'+ props.table.table_name}"><Link to={'/table/'+ props.table.table_name} style={{color: '#333'}} ><i className="fas fa-search-plus"></i></Link></button>
+                </div>
+
             </div>
         </article>
     );

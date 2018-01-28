@@ -7,6 +7,16 @@ html, body, div, nav {
   width: 100%;
 }
 
+p {
+  margin: 6px;
+}
+
+.text-overflow {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .app {
   text-align: center;
 }
@@ -70,13 +80,6 @@ html, body, div, nav {
   transition: opacity 300ms ease;
 }
 /* END view transitions */
-
-/* logo animation */
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-/* END logo animation */
 
 /* Dynamic Table */
 
