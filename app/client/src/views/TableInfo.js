@@ -46,7 +46,7 @@ class TableInfo extends Component {
 								<TableCard table={this.state.table_info} />
 								<h2>
 									<div className="table-info-wrapper">
-										TABLE <span style={{fontStyle: 'italic'}}>"{this.state.table_info.table_name.toUpperCase()}"</span>
+										TABLE <small style={{fontStyle: 'italic'}}>"{this.state.table_info.table_name.toUpperCase()}"</small>
 									</div>
 								</h2>
 							</div>

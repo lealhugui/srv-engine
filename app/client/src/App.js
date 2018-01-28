@@ -1,7 +1,7 @@
 import React from 'react';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import {
-  BrowserRouter as Router,
+  Router,
   Route,
   Switch,
   Link
@@ -57,7 +57,7 @@ const App = () => {
         <div className="app">
           <div className="app-header">
             <div className="app-info">
-              <div className="app-info element"><img id="app-logo" src={logo} className="app-logo" alt="logo" /></div>
+              <div className="app-info element"><img id="app-logo" src={logo} className="rotating app-logo" alt="logo" /></div>
               <div className="app-info element"><h2 style={{height:"100%"}}>schema-analyser</h2></div>
             </div>
           </div>

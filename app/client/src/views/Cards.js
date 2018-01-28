@@ -24,11 +24,11 @@ export const TableCard = (props) => {
     }
 
     return (
-        <article class="table-card-outer">
+        <article className="table-card-outer">
             <div className="table-card" title={props.table.table_name}>
-                <b>{props.table.table_name.toUpperCase()}</b>
-                <span className="obj-identifier"><Link to={'/table/'+ props.table.table_name}>[obj]</Link></span>
-                <div style={listWrapperStyles}>{flds}</div>
+                <p>{props.table.table_name.toUpperCase()}</p>
+                <button className="obj-identifier" href="{'/table/'+ props.table.table_name}"> </button>
+                <small style={listWrapperStyles}>{flds}</small>
             </div>
         </article>
     );
@@ -46,7 +46,7 @@ export const SchemaCard = (props) => {
     return (
         <div className="schema-card">
             <div>
-                Schema Name: <b>{props.schema.schema_name.toUpperCase()}</b>
+                <p>Schema Name: <b>{props.schema.schema_name.toUpperCase()}</b></p>
             </div>
             {listTables}
         </div>
